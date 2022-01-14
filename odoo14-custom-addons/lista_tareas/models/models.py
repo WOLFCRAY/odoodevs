@@ -10,6 +10,7 @@ class lista_tareas(models.Model):
      prioridad = fields.Integer()
      urgente = fields.Boolean(compute="_value_urgente", store=True)
      realizada = fields.Boolean()
+     fecha = fields.Date()
      def _value_urgente(self):
      #Para cada registro
       for record in self:
