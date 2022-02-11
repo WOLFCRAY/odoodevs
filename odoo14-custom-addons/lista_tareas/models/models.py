@@ -7,16 +7,21 @@ class lista_tareas(models.Model):
      _name = 'lista_tareas.lista_tareas'
      _description = 'lista_tareas.lista_tareas'
      tarea = fields.Char()
+     fecha = fields.Date()
      prioridad = fields.Integer()
      urgente = fields.Boolean(compute="_value_urgente", store=True)
      realizada = fields.Boolean()
+     descripcion = fields.Text()
+
+
+     @api.depends('prioridad') 
      def _value_urgente(self):
      #Para cada registro
-      for record in self:
-         if record.prioridad>10:
-            record.urgente=True
-         else:
-            record.urgente = False
+         for record in self:
+            if record.prioridad>5:
+               record.urgente=True
+            else:
+               record.urgente = False
 #     name = fields.Char()
 #     value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)
