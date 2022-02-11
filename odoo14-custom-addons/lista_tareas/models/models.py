@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+# parte B
 from odoo import models, fields, api
 
 
