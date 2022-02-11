@@ -6,6 +6,8 @@ from odoo import models, fields, api
 class lista_tareas(models.Model):
      _name = 'lista_tareas.lista_tareas'
      _description = 'lista_tareas.lista_tareas'
+
+     avatar = fields.Image('Imagen tarea',max_width=50,max_heigth=50)
      tarea = fields.Char()
      fecha = fields.Date()
      prioridad = fields.Integer()
