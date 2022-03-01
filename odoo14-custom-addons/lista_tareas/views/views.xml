@@ -52,6 +52,9 @@
     <menuitem name="Users" id="lista_tareas.menu_1" parent="lista_tareas.menu_root"/>
     <menuitem name="Groups" id="lista_tareas.menu_2" parent="lista_tareas.menu_root"/>
     <menuitem name="Comunity" id="lista_tareas.menu_3" parent="lista_tareas.menu_root"/>
+    <menuitem name="City" id="lista_tareas.menu_4" parent="lista_tareas.menu_root"/>
+    
+    
     <!--
     <menuitem name="Menu 2" id="lista_tareas.menu_2" parent="lista_tareas.menu_root"/>
     -->
@@ -63,6 +66,8 @@
     <menuitem name="Local" id="lista_tareas.menu_3_list" parent="lista_tareas.menu_3"
               action="lista_tareas.action_window"/>
     <menuitem name="Global" id="lista_tareas.menu_3_list" parent="lista_tareas.menu_3"
+              action="lista_tareas.action_window"/>
+    <menuitem name="Zona" id="lista_tareas.menu_4_list" parent="lista_tareas.menu_4"
               action="lista_tareas.action_window"/>
 
     
